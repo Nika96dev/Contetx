@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#editor {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    margin: 20px 0;
+    overflow-y: auto;
+}
+
+#editor:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.counter {
+    font-size: 14px;
+    color: #666;
+}
+
+[placeholder]:empty:before {
+    content: attr(placeholder);
+    color: #999;
+    cursor: text;
+}
+
+#editor span.highlight {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
